@@ -3,9 +3,22 @@
   margin: 0;
   box-sizing: border-box;
   background-color: #f0e2c5;
+  /* @media only screen and (max-width: 500px) { 
+      /* body {       background: #bada55;   } }  */
 }
+
+@media only screen and (max-width: 768px) {
+  * {
+    background-color: lightblue;
+  }
+  nav ul li a {
+    float: none;
+    display: block;
+  }
+}
+
 /* header section  */
-header {
+.header {
   /* border-bottom: 1px solid black;    */
   padding: 20px 0;
   text-align: center;
@@ -18,15 +31,15 @@ header {
   justify-content: center;
   padding: 30px 0px;
 }
-img {
+.img-header {
   width: 50%;
   height: 50%;
 }
 
 #header h1,
-#our-menu h1,
-#about-us h1,
-#contact-us h1 {
+#our-menu h2,
+#about-us h2,
+#contact-us h2 {
   font-family: "Playfair Display SC", serif;
   font-weight: 900;
   font-style: normal;
@@ -37,6 +50,7 @@ header p {
   font-family: "Lato", sans-serif;
   font-weight: 400;
   font-style: normal;
+  color: #49281a;
   padding: 10px 0;
 
   margin-bottom: 20px;
@@ -46,7 +60,7 @@ header a {
   padding: 10px 20px;
   color: #fff;
   text-decoration: none;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 /* nav section  */
 
@@ -54,6 +68,11 @@ nav {
   /* border: 1px solid #000; */
   text-align: center;
   padding: 20px 0;
+  position: sticky;
+  top: 0px;
+
+  /* test  */
+  overflow: auto;
 }
 
 nav ul li a {
@@ -63,52 +82,72 @@ nav ul li a {
   font-family: "Lato", sans-serif;
   text-decoration: none;
   color: black;
+  padding: 10px 20px;
   margin-right: 30px;
+  transition: 1s;
+
+  /* test  */
+  float: left;
 }
+
+nav ul li a:hover {
+  box-shadow: 2px 2px 2px #000;
+}
+
 /* our-menu section  */
 #our-menu,
 #about-us,
 #contact-us,
 #footer {
-  border: 3px solid green;
-  /* color: green; */
+  /* border: 3px solid green; */
+
   color: #49281a;
-  width: 80%;
+  width: 90%;
   margin: 20px auto;
   padding: 10px;
   font-weight: 200;
   font-style: normal;
   font-family: "Lato", sans-serif;
 }
-#our-menu h2 {
+#our-menu h3 {
   /* coffee selection , delicious snack  */
+
   color: black;
   font-weight: 200;
   font-style: normal;
   font-family: "Lato", sans-serif;
   margin: 20px 10px 0 0;
 }
+.container-card {
+  /* margin-top: 5px; */
 
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
 .card {
   border: 1px solid black;
-  width: 230px;
-  /* height: 400px; */
+  width: 270px;
+  height: 420px;
   margin-top: 15px;
+  margin-right: 5px;
   padding: 10px;
   text-align: center;
   font-family: lato, sans-serif;
-  border-radius: 4px;
+  border-radius: 10px;
   display: inline-block;
 }
 
-img {
+.img-card {
   max-width: 100%;
-  max-height: 100%;
+
+  /* max-height: 100%; */
 }
 
 .card h3 {
   /* Americano, caramel, vanilla latte  */
-  padding: 10px 0;
+  padding: 7px 0;
 }
 .card p {
   line-height: 1.5;
@@ -119,12 +158,13 @@ img {
   font-style: italic;
 }
 .btn {
+  /* order buttom  */
   display: block;
   background-color: #49281a;
   width: 200px;
   margin: auto;
   padding: 10px 5px;
-  border-radius: 5px;
+  border-radius: 10px;
   text-decoration: none;
   color: #fff;
 }
@@ -132,32 +172,31 @@ img {
 #about-us p,
 #contact-us p,
 #footer p {
-  /* color: #49281a; */
-
   margin: 10px 0;
   text-align: justify;
   line-height: 1.5;
+  font-family: "Lato", sans-serif;
 }
 /* #contact-us section  */
 form {
-  /* border: 1px solid;  */
+  /* border: 1px solid black; */
   font-family: "Lato", sans-serif;
-  /* width: 75%; */
-  /* margin: 10px auto;  */
+  width: 70%;
+  margin: 10px auto;
 }
 form div {
   padding: 10px 0;
 }
 .form-label {
-  /* background-color: red;  */
   display: inline-block;
-  width: 20%;
-  text-align: left top;
+  width: 30%;
+  text-align: right;
 }
 .form-control {
-  width: 40%;
+  width: 50%;
+  border: none;
   outline: none;
-  border-radius: 5px;
+  border-bottom: 1px solid #000;
 }
 
 .btn-submit {
@@ -167,11 +206,27 @@ form div {
   background-color: #49281a;
   color: #f0e2c5;
   border: none;
-  border-radius: 5px;
-  margin: 10px 230px;
+  border-radius: 10px;
+  margin: 10px auto;
+}
+
+footer p a {
+  background-color: #49281a;
+  color: black;
+
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  width: 50px;
+  height: 50px;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 footer p {
   text-align: center;
   font-size: 0.8em;
+  padding-bottom: 10px;
 }

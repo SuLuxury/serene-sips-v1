@@ -5,140 +5,154 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="images/blackcoffee.jpg" />
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>Serene Sips v1</title>
   </head>
   <body>
     <!-- header section  -->
     <header class="header container">
-      <div><img src="images/cofe.png" alt="" /></div>
+      <div><img src="images/cofe.png" alt="" class="img-header" /></div>
       <div>
         <h1>Welcome to Serene Sips</h1>
         <p>Indulge in the finest coffee experience crafted just for you.</p>
         <a href="#our-menu" class="btn-explore">Explore Our Menu</a>
       </div>
-      <div><img src="images/croissant.png" alt="" /></div>
+      <div><img src="images/croissant.png" alt="" class="img-header" /></div>
     </header>
 
     <!-- nav section  -->
     <nav>
       <ul>
         <li>
-          <a href="#header" class="bar">Home</a>
-          <a href="#our-menu" class="bar">Menu</a>
-          <a href="#about-us" class="bar">About Us</a>
-          <a href="#contact-us" class="bar">Contact</a>
+          <a href="#header">Home</a>
+          <a href="#our-menu">Menu</a>
+          <a href="#about-us" class="">About Us</a>
+          <a href="#contact-us" class="">Contact</a>
         </li>
       </ul>
     </nav>
 
     <!-- section# Our-Menu  -->
     <section id="our-menu">
-      <h1>Our Menu</h1>
+      <h2>Our Menu</h2>
+
       <div class="menu">
-        <h2>Coffee Selections</h2>
-        <div class="card">
-          <img src="images/blackcoffee.jpg" alt="" class="card-img" />
-          <h3>Americano</h3>
-          <p>
-            - Strong and black coffee. <br />
-            Perfect for the bold coffee enthusiast. <br />
-            <span class="price">$2.50</span>
-          </p>
-          <!-- <button>Order</button> -->
-          <a href="#" class="btn">Order</a>
-        </div>
-        <div class="card">
-          <img src="images/blackcoffee.jpg" alt="" class="card-img" />
-          <!-- <img src="images/caramel-macchiato.jpg" alt="" class="card-img" /> -->
-          <h3>Caramel Macchiato</h3>
-          <p>
-            - Espresso with steamed milk and caramel drizzle. <br />
-            A sweet and indulgent treat. <br />
-            <span class="price">$4.50</span>
-          </p>
-          <!-- <button>Order</button> -->
-          <a href="#" class="btn">Order</a>
-        </div>
-        <div class="card">
-          <img src="images/blackcoffee.jpg" alt="" class="card-img" />
-          <!-- <img src="images/vanila-latte.jpg" alt="" class="card-img" /> -->
-          <h3>Vanilla Latte</h3>
-          <p>
-            - Espresso with steamed milk and a hint of vanilla. <br />
-            Smooth and aromatic.<br />
-            <span class="price">$4.25</span>
-          </p>
-          <!-- <button>Order</button> -->
-          <a href="#" class="btn">Order</a>
-        </div>
-        <div class="card">
-          <img src="images/blackcoffee.jpg" alt="" class="card-img" />
-          <!-- <img src="images/cold-brew.jpg" alt="" class="card-img" /> -->
-          <h3>Cold Brew</h3>
-          <p>
-            - Refreshing cold coffee brewed to perfection. <br />
-            Perfect for a hot day.<br />
-            <span class="price">$3.75</span>
-          </p>
-          <!-- <button>Order</button> -->
-          <a href="#" class="btn">Order</a>
+        <h3>Coffee Selections</h3>
+        <div class="container-card">
+          <div class="card">
+            <img src="images/blackcoffee.jpg" alt="" class="img-card" />
+            <h3>Americano</h3>
+            <p>
+              - Strong and black coffee. <br />
+              Perfect for the bold coffee enthusiast. <br />
+              <span class="price">$2.50</span>
+            </p>
+            <!-- <button>Order</button> -->
+            <a href="#" class="btn">Order</a>
+          </div>
+          <div class="card">
+            <img src="images/blackcoffee.jpg" alt="" class="img-card" />
+            <!-- <img src="images/caramel-macchiato.jpg" alt="" class="card-img" /> -->
+            <h3>Americano</h3>
+            <p>
+              - Strong and black coffee. <br />
+              Perfect for the bold coffee enthusiast.<br />
+              <span class="price">$4.50</span>
+            </p>
+            <!-- <button>Order</button> -->
+            <a href="#" class="btn">Order</a>
+          </div>
+          <div class="card">
+            <img src="images/blackcoffee.jpg" alt="" class="img-card" />
+            <!-- <img src="images/vanila-latte.jpg" alt="" class="card-img" /> -->
+            <h3>Americano</h3>
+            <p>
+              - Strong and black coffee. <br />
+              Perfect for the bold coffee enthusiast.<br />
+              <span class="price">$4.25</span>
+            </p>
+            <!-- <button>Order</button> -->
+            <a href="#" class="btn">Order</a>
+          </div>
+          <div class="card">
+            <img src="images/blackcoffee.jpg" alt="" class="img-card" />
+            <!-- <img src="images/cold-brew.jpg" alt="" class="card-img" /> -->
+            <h3>Americano</h3>
+            <p>
+              - Strong and black coffee. <br />
+              Perfect for the bold coffee enthusiast.<br />
+              <span class="price">$3.75</span>
+            </p>
+            <!-- <button>Order</button> -->
+            <a href="#" class="btn">Order</a>
+          </div>
         </div>
       </div>
+
       <div class="menu">
-        <h2>Delicious Snack</h2>
-        <div class="card">
-          <img src="images/classic-croissant.jpg" alt="" class="card-img" />
-          <h3>Classic Croissant</h3>
-          <p>
-            - Light, flaky, and buttery. <br />
-            A timeless delight.<br />
-            <span class="price">$2.50</span>
-          </p>
-          <!-- <button>Order</button> -->
-          <a href="#" class="btn">Order</a>
-        </div>
-        <div class="card">
-          <img src="images/classic-croissant.jpg" alt="" class="card-img" />
-          <!-- <img src="images/almond-croissant.jpg" alt="" class="card-img" /> -->
-          <h3>Almond Croissant</h3>
-          <p>
-            - Classic croissant filled with almond paste. <br />
-            Irresistibly flaky and nutty. <br />
-            <span class="price">$3.00</span>
-          </p>
-          <!-- <button>Order</button> -->
-          <a href="#" class="btn">Order</a>
-        </div>
-        <div class="card">
-          <img src="images/classic-croissant.jpg" alt="" class="card-img" />
-          <!-- <img src="images/bagel with cream cheese.jpg" alt="" class="card-img" /> -->
-          <h3>Bagel with Cream Cheese</h3>
-          <p>
-            - Freshly baked bagel served with cream cheese. <br />
-            A simple and satisfying choice.<br />
-            <span class="price">$2.50</span>
-          </p>
-          <!-- <button>Order</button> -->
-          <a href="#" class="btn">Order</a>
-        </div>
-        <div class="card">
-          <img src="images/classic-croissant.jpg" alt="" class="card-img" />
-          <!-- <img src="images/chololate-croissant.jpg" alt="" class="card-img" /> -->
-          <h3>Chocolate Croissant</h3>
-          <p>
-            - Buttery croissant with a rich chocolate filling. <br />
-            A decadent pastry delight.<br />
-            <span class="price">$3.25</span>
-          </p>
-          <!-- <button>Order</button> -->
-          <a href="#" class="btn">Order</a>
+        <h3>Delicious Snack</h3>
+        <div class="container-card">
+          <div class="card">
+            <img src="images/classic-croissant.jpg" alt="" class="img-card" />
+            <!-- <img src="images/almond-croissant.jpg" alt="" class="card-img" /> -->
+            <h3>Almond Croissant</h3>
+            <p>
+              - Light, flaky, and buttery. <br />
+              A timeless delight. <br />
+              <span class="price">$2.50</span>
+            </p>
+            <!-- <button>Order</button> -->
+            <a href="#" class="btn">Order</a>
+          </div>
+          <div class="card">
+            <img src="images/classic-croissant.jpg" alt="" class="img-card" />
+            <!-- <img src="images/almond-croissant.jpg" alt="" class="card-img" /> -->
+            <h3>Almond Croissant</h3>
+            <p>
+              - Light, flaky, and buttery. <br />
+              A timeless delight. <br />
+              <span class="price">$3.00</span>
+            </p>
+            <!-- <button>Order</button> -->
+            <a href="#" class="btn">Order</a>
+          </div>
+          <div class="card">
+            <img src="images/classic-croissant.jpg" alt="" class="img-card" />
+            <!-- <img src="images/bagel with cream cheese.jpg" alt="" class="card-img" /> -->
+            <h3>Almond Croissant</h3>
+            <p>
+              - Light, flaky, and buttery. <br />
+              A timeless delight. <br />
+              <span class="price">$2.50</span>
+            </p>
+            <!-- <button>Order</button> -->
+            <a href="#" class="btn">Order</a>
+          </div>
+          <div class="card">
+            <img src="images/classic-croissant.jpg" alt="" class="img-card" />
+            <!-- <img src="images/chololate-croissant.jpg" alt="" class="card-img" /> -->
+            <h3>Almond Croissant</h3>
+            <p>
+              - Light, flaky, and buttery. <br />
+              A timeless delight. <br />
+              <span class="price">$3.25</span>
+            </p>
+            <!-- <button>Order</button> -->
+            <a href="#" class="btn">Order</a>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- section# About Us -->
     <section id="about-us">
-      <h1>About Us</h1>
+      <h2>About Us</h2>
       <p>Welcome to Serene Sips Café, where every cup tells a story!</p>
       <p>
         Founded in 2020, our coffee journey began with a passion for creating a
@@ -166,7 +180,7 @@
 
     <!-- section# Contact Us -->
     <section id="contact-us">
-      <h1>Contact Us</h1>
+      <h2>Contact Us</h2>
       <p>
         We'd love to hear from you! Reach out to us with any questions,
         feedback, or special requests.
@@ -187,8 +201,8 @@
             class="form-control"
             name=""
             id=""
-            cols="30"
-            rows="10"
+            cols="25"
+            rows="5"
           ></textarea>
         </div>
         <div>
@@ -199,8 +213,17 @@
 
     <!-- footer  -->
     <footer>
-      <p>Copyright &copy; 2024, Serene Sips Café. All Rights Reserved.</p>
-      <a href="#header">Top</a>
+      <p>
+        Copyright &copy; 2024, Serene Sips Café. All Rights Reserved.
+        <a href="#our-menu"><i class="fa-solid fa-arrow-up"></i></a>
+      </p>
     </footer>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/all.min.js"
+      integrity="sha512-6sSYJqDreZRZGkJ3b+YfdhB3MzmuP9R7X1QZ6g5aIXhRvR1Y/N/P47jmnkENm7YL3oqsmI6AK+V6AD99uWDnIw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
   </body>
 </html>
