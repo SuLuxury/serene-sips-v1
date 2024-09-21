@@ -87,7 +87,7 @@ nav ul li a {
   transition: 1s;
 
   /* test  */
-  float: left;
+  /* float: left; */
 }
 
 nav ul li a:hover {
